@@ -1,0 +1,43 @@
+You are improving a static personal portfolio website project named “WebGlow”.
+
+TASKS:
+
+1. **Overall Style & Modernization**
+   - Make the design visually modern, consistent, and sleek — similar to 2025 portfolio design trends.
+   - Use dark mode theme (navy / black with soft glow).
+   - Add subtle glassmorphism or neon glow effects to buttons, nav, and cards.
+   - Use smooth scroll animations and hover transitions (via CSS or AOS library).
+   - Ensure fully responsive and mobile-friendly design.
+
+2. **Header Enhancement**
+   - In the header (navbar area), add a small, elegant text or logo credit:
+     “✨ Powered by WebGlow”  
+     — clicking on it should open: https://webglowx.onrender.com/ in a new tab.
+   - Keep it subtle and beautiful (not overpowering main nav).
+   - Fix the “Samakarn” font issue — it loads slowly and visibly shifts make it quick. 
+
+
+3. **Footer Fix + Unification**
+   - Currently, different pages have different footers. Unify them across all pages.
+   - Footer text should read:
+     “Designed & Developed by WebGlow”  
+     — “WebGlow” should be a clickable link (https://webglowx.onrender.com/).
+   - Add smooth hover effect and matching glow styling Web(blue) Glow(orange). 
+
+4. **Performance & UX**
+   - Optimize images and fonts for faster load.
+   - Add meta tags for SEO and social preview.
+   - Ensure consistent color palette and component spacing.
+   - Validate all internal links and fix any broken routes.
+
+5. **Technical Notes**
+   - This is a static site currently hosted on GitHub, imported into Replit.
+   - Keep the project structure clean and modular (components for header/footer if possible).
+   - Do not use heavy frameworks — pure HTML, CSS, JS, or lightweight libraries only.
+6. and before completing work check all pages should good and beatiful and smooth till then not stop enhnacement and correction keep make sure all pages look good and consistent before stop the working 
+
+
+OUTPUT:
+- Write or modify all required files.
+- Show before/after for key visual sections (header, footer, home).
+- Provide short summary of enhancements after implementing.

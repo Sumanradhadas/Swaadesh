@@ -1,0 +1,432 @@
+/* ==============================================
+   WEBGLOW DESIGN ENHANCEMENTS
+   Enhanced by WebGlow - webglowx.onrender.com
+   ============================================== */
+
+/* Top Credit Bar */
+.webglow-credit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 11px;
+    z-index: 10000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.webglow-credit a {
+    color: #ff6b00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.webglow-credit a:hover {
+    background: #ff6b00;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Adjust navbar to account for top credit bar */
+.navbar {
+    top: 25px !important;
+}
+
+/* Enhanced Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Enhanced Navbar Effects */
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(46, 32, 0, 0.95) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.scrolled {
+    backdrop-filter: blur(15px);
+    background: rgba(54, 22, 0, 0.98) !important;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced Navigation Links */
+.nav-links a {
+    position: relative;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6b00, #ffa500);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::before {
+    width: 80%;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 107, 0, 0.1);
+    color: #ffa500;
+}
+
+/* Enhanced Logo Animation */
+.logo-text {
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 15px rgba(255, 223, 0, 0.4));
+}
+
+.logo-text:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 25px rgba(255, 223, 0, 0.6));
+}
+
+/* Enhanced Hero Section */
+.hero {
+    margin-top: 25px;
+}
+
+.slider {
+    position: relative;
+}
+
+.slides img {
+    transition: transform 8s ease-in-out;
+}
+
+.slides.active img {
+    animation: kenBurnsEffect 8s ease-in-out infinite alternate;
+}
+
+@keyframes kenBurnsEffect {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Enhanced CTA Buttons */
+.cta-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.cta-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced Partner Cards */
+.partner-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.partner-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.partner-card img {
+    transition: transform 0.4s ease;
+}
+
+.partner-card:hover img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* Enhanced Awards Section */
+.awards-section {
+    position: relative;
+    padding: 80px 20px;
+}
+
+.awards-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 107, 0, 0.05) 0%, rgba(255, 165, 0, 0.05) 100%);
+    z-index: -1;
+}
+
+.award-card {
+    transition: all 0.4s ease;
+    border-radius: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced Feature Cards */
+.feature-card {
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.feature-card:hover::after {
+    opacity: 1;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-info {
+    position: relative;
+    z-index: 2;
+}
+
+/* Enhanced Footer */
+footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2000 100%);
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer-section {
+    transition: transform 0.3s ease;
+}
+
+.footer-section:hover {
+    transform: translateY(-5px);
+}
+
+.footer-links a,
+.footer-contact p {
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 20px;
+}
+
+.footer-links a::before,
+.footer-contact p::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: #ff6b00;
+}
+
+.footer-links a:hover::before,
+.footer-contact p:hover::before {
+    opacity: 1;
+    left: 5px;
+}
+
+.footer-links a:hover {
+    color: #ff6b00;
+    padding-left: 25px;
+}
+
+/* Enhanced Social Icons */
+.social-icons a {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px) rotate(360deg);
+    filter: brightness(1.2);
+}
+
+/* Floating Social Media Nav Enhancement */
+.social-nav a {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-nav a:hover {
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced Form Elements */
+input[type="email"],
+button[type="submit"],
+.footer-form button {
+    transition: all 0.3s ease;
+}
+
+input[type="email"]:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.3);
+}
+
+.footer-form button:hover {
+    background: #ff6b00;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
+}
+
+/* Page Transition Effect */
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body > * {
+    animation: pageLoad 0.6s ease-out;
+}
+
+/* Enhanced Mobile Menu */
+.mobile-menu {
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.95) !important;
+}
+
+.mobile-menu ul li a {
+    transition: all 0.3s ease;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.mobile-menu ul li a:hover {
+    background: rgba(255, 107, 0, 0.2);
+    transform: translateX(10px);
+    color: #ff6b00;
+}
+
+/* Scroll Progress Indicator */
+.scroll-progress {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ff6b00, #ffa500);
+    z-index: 10001;
+    transition: width 0.1s ease;
+}
+
+/* Loading Animation for Images */
+img {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+img:not(.loaded) {
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+
+/* Enhanced Text Selection */
+::selection {
+    background: #ff6b00;
+    color: white;
+}
+
+::-moz-selection {
+    background: #ff6b00;
+    color: white;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .webglow-credit {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+    
+    .navbar {
+        top: 23px !important;
+    }
+    
+    .hero {
+        margin-top: 23px;
+    }
+}
+
+/* Performance Optimization */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessibility Improvements */
+a:focus,
+button:focus {
+    outline: 2px solid #ff6b00;
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .webglow-credit,
+    .navbar,
+    .social-nav,
+    footer {
+        display: none;
+    }
+}
