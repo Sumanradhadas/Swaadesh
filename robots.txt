@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://swaadeshpatna.netlify.app/sitemap.xml
